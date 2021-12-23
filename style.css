@@ -1,0 +1,44 @@
+body{
+  background: url("bg.jpg");
+  margin: 0;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+
+#time{
+  height: 500px;
+  line-height: 500px;
+  font-size: 100px;
+  display: flex;
+  padding-left: 240px;
+  padding-right: 240px;
+  margin-left: 200px;
+  margin-right: 200px;
+  backdrop-filter: blur(7px) brightness(.8);
+  border-radius: 10px;
+  background: linear-gradient(to bottom right, orange, orange, orange, purple, pink, pink, pink);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -webkit-touch-callout : none
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#time div{
+  flex: 1;
+}
+
+#hr:hover, #min:hover, #sec:hover{
+  transition: .3s;
+  color: white;
+}
